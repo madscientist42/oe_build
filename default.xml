@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ 
+  <!-- This is the list of repos we're nabbing things from here... -->
+  <remote  name="github"
+           fetch="https://github.org" />
+
+  <remote  name="yocto"
+	   fetch="http://git.yoctoproject.org" />
+
+  <!-- Unless overridden by the project line-item, we're grabbing from 
+       the head of the master branch for any given git repo for this
+       project... -->
+  <default revision="refs/heads/master"
+           sync-j="4" />
+
+  <!--
+  <project name="madscientist42/oe-build-config" remote="github" path="build"/>
+  -->
+  <project name="git/poky" remote="yocto" path="."/>
+
+</manifest>
