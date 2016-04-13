@@ -22,7 +22,7 @@
       need to be in this grouping with the right branch info in it --> 
  <project name="git/poky" remote="yocto" revision="refs/heads/fido" path="." />
  <project name="git/meta-ti" remote="yocto" revision="refs/heads/fido" path="meta-ti" />
- <project name="git/meta-beaglebone" remote="yocto" revision="refs/heads/fido" path="meta-beaglebone" />
+ <project name="git/meta-beagleboard" remote="yocto" revision="refs/heads/fido" path="meta-beagleboard" />
  <project name="meta-openembedded" remote="openembedded" revision="refs/heads/fido" path="meta-openembedded" />
 
   <!--
