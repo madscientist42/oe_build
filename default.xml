@@ -24,9 +24,7 @@
  <project name="git/meta-raspberrypi" remote="yocto" revision="refs/heads/fido" path="meta-raspberrypi" />
  <project name="meta-openembedded" remote="openembedded" revision="refs/heads/fido" path="meta-openembedded" />
 
-  <!--
-  <project name="madscientist42/oe-build-config" remote="github" path="build"/>
-  -->
  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard" />
+ <project name="madscientist42/oe-build-config" remote="github" path="build"/>
 
 </manifest>
