@@ -3,7 +3,7 @@
  
   <!-- This is the list of repos we're nabbing things from here... -->
   <remote  name="github"
-           fetch="https://github.org" />
+           fetch="https://github.com" />
 
   <remote  name="yocto"
 	   fetch="http://git.yoctoproject.org" />
@@ -14,8 +14,7 @@
   <!-- Unless overridden by the project line-item, we're grabbing from 
        the head of the master branch for any given git repo for this
        project... -->
-  <default revision="refs/heads/master"
-           sync-j="4" />
+  <default revision="refs/heads/master"/>
 
  <!-- We're using OE/Yocto "Fido" as the project basis.  Anything that
       has to be linked to that branch head needs to use this config will 
