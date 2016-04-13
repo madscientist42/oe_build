@@ -3,7 +3,7 @@
  
   <!-- This is the list of repos we're nabbing things from here... -->
   <remote  name="github"
-           fetch="https://github.com" />
+           fetch="git://github.com" />
 
   <remote  name="yocto"
 	   fetch="http://git.yoctoproject.org" />
