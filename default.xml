@@ -25,6 +25,6 @@
  <project name="meta-openembedded" remote="openembedded" revision="refs/heads/fido" path="meta-openembedded" />
 
  <project name="beagleboard/meta-beagleboard" remote="github" path="meta-beagleboard" />
- <project name="madscientist42/oe-build-config" remote="github" path="build"/>
+ <project name="madscientist42/oe_build_config" remote="github" path="build"/>
 
 </manifest>
