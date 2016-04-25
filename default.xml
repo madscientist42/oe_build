@@ -19,10 +19,10 @@
  <!-- We're using OE/Yocto "Fido" as the project basis.  Anything that
       has to be linked to that branch head needs to use this config will 
       need to be in this grouping with the right branch info in it --> 
- <project name="git/poky" remote="yocto" revision="fido" path="." />
- <project name="git/meta-ti" remote="yocto" revision="fido" path="meta-ti" />
- <project name="git/meta-raspberrypi" remote="yocto" revision="fido" path="meta-raspberrypi" />
- <project name="meta-openembedded" remote="openembedded" revision="fido" path="meta-openembedded" />
+ <project name="git/poky" remote="yocto" path="." />
+ <project name="git/meta-ti" remote="yocto" path="meta-ti" />
+ <project name="git/meta-raspberrypi" remote="yocto" path="meta-raspberrypi" />
+ <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" />
  
  <!-- Pull in my OE pet-projects recipes layer... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
