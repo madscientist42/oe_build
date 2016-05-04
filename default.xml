@@ -21,11 +21,7 @@
  <project name="git/poky" remote="yocto" revision="jethro" path="." />
  <project name="git/meta-raspberrypi" remote="yocto" revision="jethro" path="meta-raspberrypi" />
  <project name="meta-openembedded" remote="openembedded" revision="jethro" path="meta-openembedded" /> 
- <project name="meta-qt5/meta-qt5" remote="github" revision="jethro" path="meta-qt5" /> 
  
- <!-- Pull in the meta-rpi layer.  Eventually, it'll superscede the upstream for bleeding edge on RPi... -->
- <project name="jumpnow/meta-rpi" remote="github" revision="jethro" path="meta-rpi" />
-
  <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
  <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
  
