@@ -16,34 +16,18 @@
        project... -->
   <default revision="master"/>
 
-
- <!-- We're using OE/Yocto "Fido" as the current project basis.  Anything that
-      has to be linked to that branch head needs to use this config will 
-      need to be in this grouping with the right branch info in it 
-
-      (Commenting this out for now...got answers that build Yocto for 4.4/4.5/4.6
-       kernels.  I'm slowly building up to providing 64-bits...unless beaten to it
-       I'm going to have to sideline this set...for now....  I'll probably
-       delete this section shortly because it's easier to work with Jethro
-       anyhow and I don't really need meta-ti unless I'm doing a BBB image...)
-
- <project name="git/poky" remote="yocto" revision="fido" path="." />
- <project name="git/meta-ti" remote="yocto" revision="fido" path="meta-ti" />
- <project name="git/meta-raspberrypi" remote="yocto" revision="fido" path="meta-raspberrypi" />
- <project name="meta-openembedded" remote="openembedded" revision="fido" path="meta-openembedded" /> 
- 
- -->
-
-<!-- Found a new layer set.  Based off of Jethro that allows a bit more- done by someone doing some
-     of the same things I'm doing.  Why duplicate work, right?  -->
+ <!-- Everything here is based off of Jethro as a branch- because of the latest and greatest
+      as overlaid in meta-rpi (i.e. 4.4 kernel, etc...) -->
  <project name="git/poky" remote="yocto" revision="jethro" path="." />
  <project name="git/meta-raspberrypi" remote="yocto" revision="jethro" path="meta-raspberrypi" />
  <project name="meta-openembedded" remote="openembedded" revision="jethro" path="meta-openembedded" /> 
  <project name="meta-qt5/meta-qt5" remote="github" revision="jethro" path="meta-qt5" /> 
  
-
  <!-- Pull in the meta-rpi layer.  Eventually, it'll superscede the upstream for bleeding edge on RPi... -->
  <project name="jumpnow/meta-rpi" remote="github" revision="jethro" path="meta-rpi" />
+
+ <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
+ <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
  
  <!-- Pull in my OE pet-projects recipes layer... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
