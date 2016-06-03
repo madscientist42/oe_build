@@ -25,6 +25,10 @@
  <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
  <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
  
+ <!-- As a resource, we're bringing in the OpenWRT layer, which brings in all the best of breed 
+      from there into OE...and since we're playing in this space...bring it in! -->
+ <project name="kraj/meta-openwrt" remote="github" path="meta-openwrt" /> 
+ 
  <!-- Pull in my OE pet-projects recipes layer... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
 
