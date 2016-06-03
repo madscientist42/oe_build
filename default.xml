@@ -16,11 +16,11 @@
        project... -->
   <default revision="master"/>
 
- <!-- Everything here is based off of Jethro as a branch- because of the latest and greatest
+ <!-- Everything here is based off of krogoth as a branch- because of the latest and greatest
       as overlaid in meta-rpi (i.e. 4.4 kernel, etc...) -->
- <project name="git/poky" remote="yocto" revision="jethro" path="." />
- <project name="git/meta-raspberrypi" remote="yocto" revision="jethro" path="meta-raspberrypi" />
- <project name="meta-openembedded" remote="openembedded" revision="jethro" path="meta-openembedded" /> 
+ <project name="git/poky" remote="yocto" revision="krogoth" path="." />
+ <project name="git/meta-raspberrypi" remote="yocto" revision="krogoth" path="meta-raspberrypi" />
+ <project name="meta-openembedded" remote="openembedded" revision="krogoth" path="meta-openembedded" /> 
  
  <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
  <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
