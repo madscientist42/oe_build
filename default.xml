@@ -26,7 +26,7 @@
 
  <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
  <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
- <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs-contrib" />
+ <project name="imyller/meta-nodejs-contrib" remote="github" path="meta-nodejs-contrib" />
  
  
  <!-- As a resource, we're bringing in the OpenWRT layer, which brings in all the best of breed 
