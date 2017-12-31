@@ -25,7 +25,7 @@
  <project name="git/meta-raspberrypi" remote="yocto" revision="pyro" path="meta-raspberrypi" />
 
  <!-- The meta-sunxi layer to bring in Allwinner SoC support for Orange/Bananna/NanoPi support -->
-<project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
+<project name="linux-sunxi/meta-sunxi" remote="github" revision="pyro" path="meta-sunxi" />
 
  <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
  <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
