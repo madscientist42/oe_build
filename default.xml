@@ -16,16 +16,16 @@
        project... -->
   <default revision="master"/>
 
- <!-- Everything here is based off of krogoth as a branch- because of the latest and greatest
-      as overlaid in meta-rpi (i.e. 4.4 kernel, etc...) -->
- <project name="git/poky" remote="yocto" revision="pyro" path="." />
- <project name="meta-openembedded" remote="openembedded" revision="pyro" path="meta-openembedded" /> 
+ <!-- Everything here is based off of rocko as a branch- because of the latest and greatest
+      as overlaid in meta-rpi (i.e. 4.9 kernel, etc...) and in meta-sunxi -->
+ <project name="git/poky" remote="yocto" revision="rocko" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="rocko" path="meta-openembedded" /> 
  
- <!-- The RaspberryPi Metadata layer happens to not have a krogoth version, but "master" counts... -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="pyro" path="meta-raspberrypi" />
+ <!-- The RaspberryPi Metadata layer happens to not have a rocko version, but "master" counts... -->
+ <project name="git/meta-raspberrypi" remote="yocto" revision="master" path="meta-raspberrypi" />
 
  <!-- The meta-sunxi layer to bring in Allwinner SoC support for Orange/Bananna/NanoPi support -->
-<project name="linux-sunxi/meta-sunxi" remote="github" revision="pyro" path="meta-sunxi" />
+<project name="linux-sunxi/meta-sunxi" remote="github" revision="master" path="meta-sunxi" />
 
  <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
  <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
