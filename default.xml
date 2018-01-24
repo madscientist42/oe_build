@@ -18,26 +18,18 @@
 
  <!-- Everything here is based off of rocko as a branch- because of the latest and greatest
       as overlaid in meta-rpi (i.e. 4.9 kernel, etc...) and in meta-sunxi -->
- <project name="git/poky" remote="yocto" revision="rocko" path="." />
+ <project name="git/poky" remote="yocto" path="." />
  <project name="meta-openembedded" remote="openembedded" revision="rocko" path="meta-openembedded" /> 
  
  <!-- The RaspberryPi Metadata layer happens to not have a rocko version, but "master" counts... -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="master" path="meta-raspberrypi" />
+ <project name="git/meta-raspberrypi" remote="yocto" path="meta-raspberrypi" />
 
  <!-- The meta-sunxi layer to bring in Allwinner SoC support for Orange/Bananna/NanoPi support -->
-<project name="linux-sunxi/meta-sunxi" remote="github" revision="master" path="meta-sunxi" />
-
- <!-- We're currently using the latest and greatest on Node.js...so, bring in the official meta-nodejs layer -->
- <project name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
- <project name="imyller/meta-nodejs-contrib" remote="github" path="meta-nodejs-contrib" />
+<project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
 
  <!-- Pull in a OE metadata layer of mine...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
-  
- <!-- As a resource, we're bringing in the OpenWRT layer, which brings in all the best of breed 
-      from there into OE...and since we're playing in this space...bring it in! -->
- <project name="kraj/meta-openwrt" remote="github" path="meta-openwrt" /> 
- 
+   
  <!-- Pull in my OE pet-projects recipes layer... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
 
