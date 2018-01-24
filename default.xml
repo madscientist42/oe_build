@@ -29,6 +29,9 @@
 
  <!-- Pull in a OE metadata layer of mine...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
+
+ <!-- Pull in the embedded device network/local forensics tools layer -->
+ <project name="git/meta-security" remote="yocto" path="meta-security" />
    
  <!-- Pull in my OE pet-projects recipes layer... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
