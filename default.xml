@@ -14,7 +14,7 @@
   <!-- Unless overridden by the project line-item, we're grabbing from 
        the head of the master branch for any given git repo for this
        project... -->
-  <default revision="rocko"/>
+  <default revision="master"/>
 
  <!-- Everything here is based off of rocko as a branch- because of the latest and greatest
       as overlaid in meta-rpi (i.e. 4.9 kernel, etc...) and in meta-sunxi -->
