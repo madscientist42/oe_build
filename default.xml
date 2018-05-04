@@ -19,7 +19,8 @@
  <!-- Everything here is based off of rocko as a branch where possible and practical
       mainly because they don't break things as often in a "stable" branch -->
  <project name="git/poky" remote="yocto" path="." />
- <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" /> 
+ <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" />
+ <project name="mem/oe-meta-go" remote="github" path="oe-meta-go" />
  
  <!-- The RaspberryPi Metadata layer -->
  <project name="git/meta-raspberrypi" remote="yocto" path="meta-raspberrypi" />
