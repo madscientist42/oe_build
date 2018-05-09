@@ -20,7 +20,7 @@
       mainly because they don't break things as often in a "stable" branch -->
  <project name="git/poky" remote="yocto" path="." />
  <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" />
- <project name="mem/oe-meta-go" remote="github" revision="master" path="oe-meta-go" />
+ <project name="madisongh/meta-golang" remote="github" revision="master" path="meta-golang" />
  
  <!-- The RaspberryPi Metadata layer -->
  <project name="git/meta-raspberrypi" remote="yocto" path="meta-raspberrypi" />
