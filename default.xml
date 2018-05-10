@@ -12,33 +12,34 @@
      	   fetch="git://git.openembedded.org/" />
 
   <!-- Unless overridden by the project line-item, we're grabbing from 
-       the head of the rocko branch for any given git repo for this
+       the head of the master branch for any given git repo for this
        project... -->
-  <default revision="rocko"/>
+  <default revision="master"/>
 
- <!-- Everything here is based off of rocko as a branch where possible and practical
-      mainly because they don't break things as often in a "stable" branch -->
- <project name="git/poky" remote="yocto" path="." />
- <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" />
- <project name="madisongh/meta-golang" remote="github" revision="master" path="meta-golang" />
+ <!-- Yocto/Poky core pieces -->
+ <project name="git/poky" remote="yocto" revision="sumo" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="sumo" path="meta-openembedded" />
+
+ <!-- Golang support for building Go apps like the production test app -->
+ <project name="madisongh/meta-golang" remote="github" path="meta-golang" />
  
- <!-- The RaspberryPi Metadata layer -->
+ <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
  <project name="git/meta-raspberrypi" remote="yocto" path="meta-raspberrypi" />
 
- <!-- The meta-sunxi layer to bring in Allwinner SoC support for Orange/Bananna/NanoPi support -->
+ <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
 <project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
  <project name="git/meta-security" remote="yocto" path="meta-security" />
    
- <!-- Pull in a OE metadata layer of mine...the out of kernel buld Realtek USB Wifi support -->
- <project name="madscientist42/meta-rtlwifi" remote="github" revision="master" path="meta-rtlwifi" />
+ <!-- Pull in a OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
+ <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
 
- <!-- Pull in my OE pet-projects recipes layer...  We don't have anything other than master for this. -->
- <project name="madscientist42/meta-pha" remote="github" revision="master" path="meta-pha"/>
+ <!-- Pull in a OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
+ <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
 
- <!-- Finally, pull in our build config...  We don't have anything other than master for this. -->
- <project name="madscientist42/oe_build_config" remote="github" revision="master" path="build"/>
+ <!-- Pull in our build config... -->
+ <project name="madscientist42/oe_build_config" remote="github" path="build"/>
 
 </manifest>
 
