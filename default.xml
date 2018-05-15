@@ -21,7 +21,7 @@
  <project name="meta-openembedded" remote="openembedded" revision="sumo" path="meta-openembedded" />
 
  <!-- Golang support for building Go apps like the production test app -->
- <project name="madisongh/meta-golang" remote="github" path="meta-golang" />
+ <project name="madisongh/meta-golang" remote="github" revision="rocko" path="meta-golang" />
  
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
  <project name="git/meta-raspberrypi" remote="yocto" path="meta-raspberrypi" />
