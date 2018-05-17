@@ -19,12 +19,9 @@
  <!-- Yocto/Poky core pieces -->
  <project name="git/poky" remote="yocto" revision="sumo" path="." />
  <project name="meta-openembedded" remote="openembedded" revision="sumo" path="meta-openembedded" />
-
- <!-- Golang support for building Go apps like the production test app -->
- <project name="madisongh/meta-golang" remote="github" revision="rocko" path="meta-golang" />
  
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="rocko" path="meta-raspberrypi" />
+ <project name="git/meta-raspberrypi" remote="yocto" revision="sumo" path="meta-raspberrypi" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
 <project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
