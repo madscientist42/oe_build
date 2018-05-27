@@ -23,8 +23,11 @@
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
  <project name="git/meta-raspberrypi" remote="yocto" revision="sumo" path="meta-raspberrypi" />
 
+ <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
+ <project name="superna9999/meta-meson" remote="github" revision="sumo" path="meta-meson" />
+
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
-<project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
  <project name="git/meta-security" remote="yocto" path="meta-security" />
