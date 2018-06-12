@@ -26,6 +26,9 @@
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
  <project name="superna9999/meta-meson" remote="github" revision="sumo" path="meta-meson" />
 
+ <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
+ <project name="meta-qt5/meta-qt5" remote="github" revision="sumo" path="meta-qt5" />
+
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
  <project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
 
