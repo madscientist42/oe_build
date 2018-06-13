@@ -34,12 +34,6 @@
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
  <project name="git/meta-security" remote="yocto" path="meta-security" />
-
- <!-- Pull in some Haskell related tools for research purposes (OpenXT is a security research org) -->
- <project name="OpenXT/meta-openxt-haskell-platform" remote="github" path="meta-openxt-haskell-platform" />
-
- <!-- Pull in a pet-projects related layer.  Libretro's stuff... -->
- <project name="claneys/meta-libretro" remote="github" path="meta-libretro" />
    
  <!-- Pull in a OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
