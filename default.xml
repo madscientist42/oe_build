@@ -30,15 +30,15 @@
  <project name="meta-qt5/meta-qt5" remote="github" revision="sumo" path="meta-qt5" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="sumo" path="meta-sunxi" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
- <project name="git/meta-security" remote="yocto" path="meta-security" />
+ <project name="git/meta-security" remote="yocto" revision="sumo" path="meta-security" />
    
- <!-- Pull in a OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
+ <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
 
- <!-- Pull in a OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
+  <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
 
  <!-- Pull in our build config... -->
