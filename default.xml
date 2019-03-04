@@ -19,7 +19,10 @@
  <!-- Yocto/Poky core pieces -->
  <project name="git/poky" remote="yocto" revision="sumo" path="." />
  <project name="meta-openembedded" remote="openembedded" revision="sumo" path="meta-openembedded" />
- 
+
+ <!-- The runit metadata layer -->
+ <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
+
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
  <project name="git/meta-raspberrypi" remote="yocto" revision="sumo" path="meta-raspberrypi" />
 
