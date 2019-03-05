@@ -29,6 +29,12 @@
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
  <project name="superna9999/meta-meson" remote="github" revision="sumo" path="meta-meson" />
 
+ <!-- The meta-rockchip layer to bring in the baseline Rockchip support for things like RK3399, etc. We're going to 
+      pull from the Yocto version, even though they don't "support" the same number of machines the Rockchip
+      fork "supports".  It's got the latest and greatest and most of the things are upstreamed in Linux mainline
+      to work with that stuff ANYHOW.  We can patch/extend machines in meta-pha as needed...-->
+ <project name="git/meta-rockchip" remote="yocto" revision="sumo" path="meta-rockchip" />
+
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
  <project name="meta-qt5/meta-qt5" remote="github" revision="sumo" path="meta-qt5" />
 
