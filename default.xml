@@ -36,7 +36,10 @@
  <project name="git/meta-rockchip" remote="yocto" revision="sumo" path="meta-rockchip" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="madisongh/meta-tegra" remote="github" revision="sumo" path="meta-tegra" />
+ <project name="madscientist42/meta-tegra" remote="github" revision="sumo" path="meta-tegra" />
+
+<!-- meta-webos-ports layer to bring in webos support -->
+ <project name="webOS-ports/meta-webos-ports" remote="github" revision="sumo" path="meta-webos-ports" />
 
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
  <project name="meta-qt5/meta-qt5" remote="github" revision="sumo" path="meta-qt5" />
@@ -50,7 +53,10 @@
  <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
 
-  <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
+ <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
+ <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
+
+ <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
 
  <!-- Pull in our build config... -->
