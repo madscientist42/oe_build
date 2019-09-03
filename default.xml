@@ -20,6 +20,9 @@
  <project name="git/poky" remote="yocto" revision="warrior" path="." />
  <project name="meta-openembedded" remote="openembedded" revision="warrior" path="meta-openembedded" />
 
+ <!-- Bring in LLVM/clang as a toolchain for other projects to use -->
+ <project name="madscientist42/meta-clang" remote="github" path="meta-clang" />
+
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
