@@ -17,38 +17,38 @@
   <default revision="master"/>
 
  <!-- Yocto/Poky core pieces -->
- <project name="git/poky" remote="yocto" revision="sumo" path="." />
- <project name="meta-openembedded" remote="openembedded" revision="sumo" path="meta-openembedded" />
+ <project name="git/poky" remote="yocto" revision="warrior" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="warrior" path="meta-openembedded" />
 
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="sumo" path="meta-raspberrypi" />
+ <project name="git/meta-raspberrypi" remote="yocto" revision="warrior" path="meta-raspberrypi" />
 
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
- <project name="superna9999/meta-meson" remote="github" revision="sumo" path="meta-meson" />
+ <project name="superna9999/meta-meson" remote="github" revision="warrior" path="meta-meson" />
 
  <!-- The meta-rockchip layer to bring in the baseline Rockchip support for things like RK3399, etc. We're going to 
       pull from the Yocto version, even though they don't "support" the same number of machines the Rockchip
       fork "supports".  It's got the latest and greatest and most of the things are upstreamed in Linux mainline
       to work with that stuff ANYHOW.  We can patch/extend machines in meta-pha as needed...-->
- <project name="git/meta-rockchip" remote="yocto" revision="sumo" path="meta-rockchip" />
+ <project name="git/meta-rockchip" remote="yocto" revision="warrior" path="meta-rockchip" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="madscientist42/meta-tegra" remote="github" revision="sumo" path="meta-tegra" />
+ <project name="madscientist42/meta-tegra" remote="github" revision="warrior" path="meta-tegra" />
 
 <!-- meta-webos-ports layer to bring in webos support -->
- <project name="webOS-ports/meta-webos-ports" remote="github" revision="sumo" path="meta-webos-ports" />
+ <project name="webOS-ports/meta-webos-ports" remote="github" revision="warrior" path="meta-webos-ports" />
 
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
- <project name="meta-qt5/meta-qt5" remote="github" revision="sumo" path="meta-qt5" />
+ <project name="meta-qt5/meta-qt5" remote="github" revision="warrior" path="meta-qt5" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="sumo" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="warrior" path="meta-sunxi" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
- <project name="git/meta-security" remote="yocto" revision="sumo" path="meta-security" />
+ <project name="git/meta-security" remote="yocto" revision="warrior" path="meta-security" />
    
  <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
