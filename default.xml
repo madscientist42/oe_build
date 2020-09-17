@@ -29,11 +29,13 @@
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
  <project name="superna9999/meta-meson" remote="github" revision="zeus" path="meta-meson" />
 
- <!-- The meta-rockchip layer to bring in the baseline Rockchip support for things like RK3399, etc. We're going to
-      pull from the Yocto version, even though they don't "support" the same number of machines the Rockchip
-      fork "supports".  It's got the latest and greatest and most of the things are upstreamed in Linux mainline
-      to work with that stuff ANYHOW.  We can patch/extend machines in meta-pha as needed...-->
- <project name="git/meta-rockchip" remote="yocto" revision="zeus" path="meta-rockchip" />
+ <!-- The meta-rockchip layer to bring in the baseline Rockchip support for things like RK3399, etc.
+
+      Pull in the 'JeffyCN" version on GitHub of this (There's three versions, but this one supports
+      enough of the core behaviors with official EVM boards from Rockchip that we're going to run
+      with this as it's currently maintained and seems to be the preferred one for everyone...)
+ -->
+ <project name="JeffyCN/meta-rockchip" remote="github" revision="master" path="meta-rockchip" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
  <project name="OE4T/meta-tegra" remote="github" revision="zeus-l4t-r32.3.1" path="meta-tegra" />
