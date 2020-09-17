@@ -36,7 +36,7 @@
  <project name="git/meta-rockchip" remote="yocto" revision="zeus" path="meta-rockchip" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="madisongh/meta-tegra" remote="github" revision="zeus" path="meta-tegra" />
+ <project name="OE4T/meta-tegra" remote="github" revision="zeus-l4t-r32.3.1" path="meta-tegra" />
 
 <!-- meta-webos-ports layer to bring in webos support -->
  <project name="webOS-ports/meta-webos-ports" remote="github" revision="zeus" path="meta-webos-ports" />
