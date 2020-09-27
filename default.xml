@@ -23,6 +23,9 @@
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
+ <!-- WindRiver's provided meta-tensorflow to make life a LOT easier for TPU, etc. projects -->
+ <project name="Wind-River/meta-tensorflow" remote="github" revision="zeus" path="meta-tensorflow" />
+
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
  <project name="git/meta-raspberrypi" remote="yocto" revision="zeus" path="meta-raspberrypi" />
 
