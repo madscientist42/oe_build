@@ -40,14 +40,14 @@
  <!-- meta-tegra layer to bring in NVidia hw support -->
  <project name="OE4T/meta-tegra" remote="github" revision="zeus-l4t-r32.3.1" path="meta-tegra" />
 
-<!-- meta-webos-ports layer to bring in webos support -->
- <project name="webOS-ports/meta-webos-ports" remote="github" revision="zeus" path="meta-webos-ports" />
+ <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="zeus" path="meta-sunxi" />
+
+ <!-- LG just brought the current state of affairs Open Source WebOS in as an official metadata layer -->
+ <project name="webosose/meta-webosose" remote="github" revision="zeus" path="meta-webosose" />
 
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
  <project name="meta-qt5/meta-qt5" remote="github" revision="zeus" path="meta-qt5" />
-
- <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="zeus" path="meta-sunxi" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
  <project name="git/meta-security" remote="yocto" revision="zeus" path="meta-security" />
