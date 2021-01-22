@@ -46,6 +46,9 @@
  <!-- LG just brought the current state of affairs Open Source WebOS in as an official metadata layer -->
  <project name="webosose/meta-webosose" remote="github" revision="zeus" path="meta-webosose" />
 
+ <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
+ <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
+
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
  <project name="meta-qt5/meta-qt5" remote="github" revision="zeus" path="meta-qt5" />
 
