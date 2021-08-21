@@ -17,17 +17,20 @@
   <default revision="master"/>
 
  <!-- Yocto/Poky core pieces -->
- <project name="git/poky" remote="yocto" revision="zeus" path="." />
- <project name="meta-openembedded" remote="openembedded" revision="zeus" path="meta-openembedded" />
+ <project name="git/poky" remote="yocto" revision="gatesgarth" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="gatesgarth" path="meta-openembedded" />
 
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
+ <!-- The meta-clang layer for the optional use of clang/LLVM with things in your build... -->
+ <project name="kraj/meta-clang" remote="github" revision="gatesgarth" path="meta-clang" />
+
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="zeus" path="meta-raspberrypi" />
+ <project name="git/meta-raspberrypi" remote="yocto" revision="gatesgarth" path="meta-raspberrypi" />
 
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
- <project name="superna9999/meta-meson" remote="github" revision="zeus" path="meta-meson" />
+ <project name="superna9999/meta-meson" remote="github" revision="gatesgarth" path="meta-meson" />
 
  <!-- The meta-rockchip layer to bring in the baseline Rockchip support for things like RK3399, etc.
 
@@ -38,30 +41,33 @@
  <project name="JeffyCN/meta-rockchip" remote="github" revision="master" path="meta-rockchip" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="OE4T/meta-tegra" remote="github" revision="zeus-l4t-r32.3.1" path="meta-tegra" />
+ <project name="OE4T/meta-tegra" remote="github" revision="gatesgarth" path="meta-tegra" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="zeus" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="master" path="meta-sunxi" />
+
+ <!-- The Intel BSP layer -->
+ <project name="git/meta-intel" remote="yocto" revision="gatesgarth" path="meta-intel" />
 
  <!-- LG just brought the current state of affairs Open Source WebOS in as an official metadata layer -->
- <project name="webosose/meta-webosose" remote="github" revision="zeus" path="meta-webosose" />
+ <project name="webosose/meta-webosose" remote="github" revision="master" path="meta-webosose" />
 
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
 
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
- <project name="meta-qt5/meta-qt5" remote="github" revision="zeus" path="meta-qt5" />
+ <project name="meta-qt5/meta-qt5" remote="github" revision="gatesgarth" path="meta-qt5" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
- <project name="git/meta-security" remote="yocto" revision="zeus" path="meta-security" />
+ <project name="git/meta-security" remote="yocto" revision="gatesgarth" path="meta-security" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
 
  <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
- <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
+ <project name="madscientist42/meta-efl" remote="github" revision="gatesgarth" path="meta-efl" />
 
- <!-- Pull in a fork of meta-kodi that's getting modernized against zeus -->
+ <!-- Pull in a fork of meta-kodi that's getting modernized against gatesgarth -->
  <project name="madscientist42/meta-kodi" remote="github" path="meta-kodi" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
