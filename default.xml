@@ -44,7 +44,7 @@
  <project name="OE4T/meta-tegra" remote="github" revision="gatesgarth" path="meta-tegra" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="master" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="gatesgarth" path="meta-sunxi" />
 
  <!-- The Intel BSP layer -->
  <project name="git/meta-intel" remote="yocto" revision="gatesgarth" path="meta-intel" />
