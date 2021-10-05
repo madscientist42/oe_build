@@ -65,7 +65,7 @@
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
 
  <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
- <project name="madscientist42/meta-efl" remote="github" revision="gatesgarth" path="meta-efl" />
+ <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
 
  <!-- Pull in a fork of meta-kodi that's getting modernized against hardknott -->
  <project name="madscientist42/meta-kodi" remote="github" path="meta-kodi" />
