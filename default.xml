@@ -16,9 +16,10 @@
        project... -->
   <default revision="master"/>
 
- <!-- Yocto/Poky core pieces -->
+ <!-- Yocto/Poky core pieces, including .NET support -->
  <project name="git/poky" remote="yocto" revision="hardknott" path="." />
  <project name="meta-openembedded" remote="openembedded" revision="hardknott" path="meta-openembedded" />
+ <project name="meta-mono" remote="yocto" revision="hardknott" path="meta-mono" />
 
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
@@ -32,14 +33,6 @@
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
  <project name="superna9999/meta-meson" remote="github" revision="hardknott" path="meta-meson" />
 
- <!-- The meta-rockchip layer to bring in the baseline Rockchip support for things like RK3399, etc.
-
-      Pull in the 'JeffyCN" version on GitHub of this (There's three versions, but this one supports
-      enough of the core behaviors with official EVM boards from Rockchip that we're going to run
-      with this as it's currently maintained and seems to be the preferred one for everyone...)
- -->
- <project name="JeffyCN/meta-rockchip" remote="github" revision="master" path="meta-rockchip" />
-
  <!-- meta-tegra layer to bring in NVidia hw support -->
  <project name="OE4T/meta-tegra" remote="github" revision="hardknott" path="meta-tegra" />
 
@@ -48,9 +41,6 @@
 
  <!-- The Intel BSP layer -->
  <project name="git/meta-intel" remote="yocto" revision="hardknott" path="meta-intel" />
-
- <!-- LG just brought the current state of affairs Open Source WebOS in as an official metadata layer -->
- <project name="webosose/meta-webosose" remote="github" revision="master" path="meta-webosose" />
 
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
@@ -66,9 +56,6 @@
 
  <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
  <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
-
- <!-- Pull in a fork of meta-kodi that's getting modernized against hardknott -->
- <project name="madscientist42/meta-kodi" remote="github" path="meta-kodi" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
