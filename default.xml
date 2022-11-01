@@ -17,39 +17,42 @@
   <default revision="master"/>
 
  <!-- Yocto/Poky core pieces, including .NET support -->
- <project name="git/poky" remote="yocto" revision="hardknott" path="." />
- <project name="meta-openembedded" remote="openembedded" revision="hardknott" path="meta-openembedded" />
- <project name="meta-mono" remote="yocto" revision="hardknott" path="meta-mono" />
+ <project name="git/poky" remote="yocto" revision="kirkstone" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="kirkstone" path="meta-openembedded" />
+ <project name="meta-mono" remote="yocto" revision="kirkstone" path="meta-mono" />
 
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
  <!-- The meta-clang layer for the optional use of clang/LLVM with things in your build... -->
- <project name="kraj/meta-clang" remote="github" revision="hardknott" path="meta-clang" />
+ <project name="kraj/meta-clang" remote="github" revision="kirkstone" path="meta-clang" />
 
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="hardknott" path="meta-raspberrypi" />
+ <project name="git/meta-raspberrypi" remote="yocto" revision="kirkstone" path="meta-raspberrypi" />
 
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
- <project name="superna9999/meta-meson" remote="github" revision="hardknott" path="meta-meson" />
+ <project name="superna9999/meta-meson" remote="github" revision="kirkstone" path="meta-meson" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="OE4T/meta-tegra" remote="github" revision="hardknott" path="meta-tegra" />
+ <project name="OE4T/meta-tegra" remote="github" revision="kirkstone" path="meta-tegra" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="hardknott" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="kirkstone" path="meta-sunxi" />
 
  <!-- The Intel BSP layer -->
- <project name="git/meta-intel" remote="yocto" revision="hardknott" path="meta-intel" />
+ <project name="git/meta-intel" remote="yocto" revision="kirkstone" path="meta-intel" />
+
+ <!-- Bring in an interesting layer that lets us do *separate* FreeRTOS builds within Yocto properly -->
+ <project name="aehs29/meta-freertos" remote="github" revision="kirkstone" path="meta-freertos" />
 
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
 
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
- <project name="meta-qt5/meta-qt5" remote="github" revision="hardknott" path="meta-qt5" />
+ <project name="meta-qt5/meta-qt5" remote="github" revision="kirkstone" path="meta-qt5" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
- <project name="git/meta-security" remote="yocto" revision="hardknott" path="meta-security" />
+ <project name="git/meta-security" remote="yocto" revision="kirkstone" path="meta-security" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
