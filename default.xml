@@ -17,48 +17,30 @@
   <default revision="master"/>
 
  <!-- Yocto/Poky core pieces, including .NET support -->
- <project name="git/poky" remote="yocto" revision="kirkstone" path="." />
- <project name="meta-openembedded" remote="openembedded" revision="kirkstone" path="meta-openembedded" />
- <project name="meta-mono" remote="yocto" revision="kirkstone" path="meta-mono" />
-
- <!-- The runit metadata layer -->
- <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
+ <project name="git/poky" remote="yocto" revision="honister" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="honister" path="meta-openembedded" />
 
  <!-- The meta-clang layer for the optional use of clang/LLVM with things in your build... -->
- <project name="kraj/meta-clang" remote="github" revision="kirkstone" path="meta-clang" />
+ <project name="kraj/meta-clang" remote="github" revision="honister" path="meta-clang" />
 
- <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="kirkstone" path="meta-raspberrypi" />
+ <!-- The ROS 1/2 metadata layer... -->
+ <project name="ros/meta-ros" remote="github" revision="honister" path="meta-ros" />
 
- <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
- <project name="superna9999/meta-meson" remote="github" revision="kirkstone" path="meta-meson" />
+ <!-- The runit metadata layer, one of the lynchpin pieces of PHA Linux... -->
+ <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
- <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="OE4T/meta-tegra" remote="github" revision="kirkstone" path="meta-tegra" />
-
- <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="kirkstone" path="meta-sunxi" />
-
- <!-- The Intel BSP layer -->
- <project name="git/meta-intel" remote="yocto" revision="kirkstone" path="meta-intel" />
-
- <!-- Bring in an interesting layer that lets us do *separate* FreeRTOS builds within Yocto properly -->
- <project name="aehs29/meta-freertos" remote="github" revision="kirkstone" path="meta-freertos" />
-
- <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
- <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
-
- <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
- <project name="meta-qt5/meta-qt5" remote="github" revision="kirkstone" path="meta-qt5" />
-
- <!-- Pull in the embedded device network/local forensics tools layer -->
- <project name="git/meta-security" remote="yocto" revision="kirkstone" path="meta-security" />
-
- <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
- <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
-
- <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
- <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
+ <!-- Pull in the Xilinx tools stuff...  We're going to approximate petalinux as a pure Yocto solution...  -->
+ <project name="Xilinx/meta-xilinx-tools" remote="github" revision="rel-v2022.2" path="meta-xilinx-tools" />
+ <project name="Xilinx/meta-xilinx" remote="github" revision="rel-v2022.2" path="meta-xilinx" />
+ <project name="Xilinx/meta-petalinux" remote="github" revision="rel-v2022.2" path="meta-petalinux" />
+ <project name="Xilinx/meta-som" remote="github" revision="rel-v2022.2" path="meta-som" />
+ <project name="Xilinx/meta-virtualization" remote="github" revision="rel-v2022.2" path="meta-virtualization" />
+ <project name="Xilinx/meta-jupyter" remote="github" revision="rel-v2022.2" path="meta-jupyter" />
+ <project name="Xilinx/meta-openamp" remote="github" revision="rel-v2022.2" path="meta-openamp" />
+ <project name="Xilinx/meta-security" remote="github" revision="rel-v2022.2" path="meta-security" />
+ <project name="Xilinx/meta-qt5" remote="github" revision="rel-v2022.2" path="meta-qt5" />
+ <project name="Xilinx/meta-python2" remote="github" revision="rel-v2022.2" path="meta-python2" />
+ <project name="Xilinx/meta-browser" remote="github" revision="rel-v2022.2" path="meta-browser" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
