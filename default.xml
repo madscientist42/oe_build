@@ -3,10 +3,10 @@
 
   <!-- This is the list of repos we're nabbing things from here... -->
   <remote  name="github"
-           fetch="http://github.com" />
+           fetch="https://github.com" />
 
   <remote  name="yocto"
-	   fetch="http://git.yoctoproject.org" />
+	   fetch="https://git.yoctoproject.org" />
 
   <remote  name="openembedded"
      	   fetch="git://git.openembedded.org/" />
@@ -30,6 +30,9 @@
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
  <project name="git/meta-raspberrypi" remote="yocto" revision="kirkstone" path="meta-raspberrypi" />
 
+ <!-- The RISC-V BSP layer, supporting three mainline SoCs that support Linux -->
+ <project name="riscv/meta-riscv" remote="github" revision="kirkstone" path="meta-riscv" />
+
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
  <project name="superna9999/meta-meson" remote="github" revision="kirkstone" path="meta-meson" />
 
@@ -41,9 +44,6 @@
 
  <!-- The Intel BSP layer -->
  <project name="git/meta-intel" remote="yocto" revision="kirkstone" path="meta-intel" />
-
- <!-- Bring in an interesting layer that lets us do *separate* FreeRTOS builds within Yocto properly -->
- <project name="aehs29/meta-freertos" remote="github" revision="kirkstone" path="meta-freertos" />
 
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
