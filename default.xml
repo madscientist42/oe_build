@@ -17,48 +17,56 @@
   <default revision="master"/>
 
  <!-- Yocto/Poky core pieces, including .NET support -->
- <project name="git/poky" remote="yocto" revision="kirkstone" path="." />
- <project name="meta-openembedded" remote="openembedded" revision="kirkstone" path="meta-openembedded" />
- <project name="meta-mono" remote="yocto" revision="kirkstone" path="meta-mono" />
+ <project name="git/poky" remote="yocto" revision="mickledore" path="." />
+ <project name="meta-openembedded" remote="openembedded" revision="mickledore" path="meta-openembedded" />
+ <project name="meta-mono" remote="yocto" revision="mickledore" path="meta-mono" />
 
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
 
  <!-- The meta-clang layer for the optional use of clang/LLVM with things in your build... -->
- <project name="kraj/meta-clang" remote="github" revision="kirkstone" path="meta-clang" />
+ <project name="kraj/meta-clang" remote="github" revision="mickledore" path="meta-clang" />
 
  <!-- The RaspberryPi Metadata layer, to let you build for a test target -->
- <project name="git/meta-raspberrypi" remote="yocto" revision="kirkstone" path="meta-raspberrypi" />
+ <project name="git/meta-raspberrypi" remote="yocto" revision="mickledore" path="meta-raspberrypi" />
 
- <!-- The RISC-V BSP layer, supporting three mainline SoCs that support Linux -->
- <project name="riscv/meta-riscv" remote="github" revision="kirkstone" path="meta-riscv" />
+ <!-- The RISC-V BSP layer, supporting three mainline SoCs that support Linux- this is the fork
+      I am currently maintaining of the same.  We're building out VisionFive 2 support for the
+      layer as an actual RISC-V/Linux Foundation Seed Project for this target. -->
+ <project name="madscientist42/meta-riscv" remote="github" path="meta-riscv" />
 
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
- <project name="superna9999/meta-meson" remote="github" revision="kirkstone" path="meta-meson" />
+ <project name="superna9999/meta-meson" remote="github" path="meta-meson" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
- <project name="OE4T/meta-tegra" remote="github" revision="kirkstone" path="meta-tegra" />
+ <project name="OE4T/meta-tegra" remote="github" revision="mickledore" path="meta-tegra" />
 
  <!-- The meta-sunxi layer to bring in (baseline...) Allwinner SoC support for Orange/Bananna/NanoPi support -->
- <project name="linux-sunxi/meta-sunxi" remote="github" revision="kirkstone" path="meta-sunxi" />
+ <project name="linux-sunxi/meta-sunxi" remote="github" revision="mickledore" path="meta-sunxi" />
 
  <!-- The Intel BSP layer -->
- <project name="git/meta-intel" remote="yocto" revision="kirkstone" path="meta-intel" />
+ <project name="git/meta-intel" remote="yocto" revision="mickledore" path="meta-intel" />
 
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
 
  <!-- Some projects will need Qt5 as a UI library...  So, bring it in... -->
- <project name="meta-qt5/meta-qt5" remote="github" revision="kirkstone" path="meta-qt5" />
+ <project name="meta-qt5/meta-qt5" remote="github" revision="mickledore" path="meta-qt5" />
 
  <!-- Pull in the embedded device network/local forensics tools layer -->
- <project name="git/meta-security" remote="yocto" revision="kirkstone" path="meta-security" />
+ <project name="git/meta-security" remote="yocto" revision="mickledore" path="meta-security" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the out of kernel buld Realtek USB Wifi support -->
  <project name="madscientist42/meta-rtlwifi" remote="github" path="meta-rtlwifi" />
 
  <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
  <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
+
+ <!-- Bring in meta-openwrt for making router builds... -->
+ <project name="kraj/meta-openwrt" remote="github" path="meta-openwrt" />
+
+ <!-- Bring in meta-linux-telephony for making fixed and mobile telephony systems -->
+ <project name="madscientist42/meta-linux-telephony" remote="github" path="meta-linux-telephony" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
