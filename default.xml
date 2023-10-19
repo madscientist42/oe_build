@@ -62,9 +62,6 @@
  <!-- Pull in a fork of meta-efl that got kind of left behind in meta-openembedded since Pyro -->
  <project name="madscientist42/meta-efl" remote="github" path="meta-efl" />
 
- <!-- Bring in meta-openwrt for making router builds... -->
- <project name="kraj/meta-openwrt" remote="github" path="meta-openwrt" />
-
  <!-- Bring in meta-linux-telephony for making fixed and mobile telephony systems -->
  <project name="madscientist42/meta-linux-telephony" remote="github" path="meta-linux-telephony" />
 
