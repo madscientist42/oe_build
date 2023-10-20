@@ -47,6 +47,11 @@
  <!-- The Intel BSP layer -->
  <project name="git/meta-intel" remote="yocto" revision="mickledore" path="meta-intel" />
 
+ <!-- Xilinx Petalinux equivalency layers...  Not the full monte, but enough to DO real FPGA work on an eval kit...  -->
+ <project name="Xilinx/meta-xilinx-tools" remote="github" revision="rel-v2022.2" path="meta-xilinx-tools" />
+ <project name="Xilinx/meta-xilinx" remote="github" revision="rel-v2022.2" path="meta-xilinx" />
+ <project name="Xilinx/meta-petalinux" remote="github" revision="rel-v2022.2" path="meta-petalinux" />
+
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
 
@@ -65,7 +70,7 @@
  <!-- Bring in meta-linux-telephony for making fixed and mobile telephony systems -->
  <project name="madscientist42/meta-linux-telephony" remote="github" path="meta-linux-telephony" />
 
- <!-- Pull in an OE metadata layer from PHA Technologies...the BSP and enhancements for the NanoPI Neo2/Neo-Plus2 boards -->
+ <!-- Pull in an OE metadata layer from PHA Technologies... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
 
  <!-- Pull in our build config... -->
