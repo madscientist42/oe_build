@@ -48,9 +48,9 @@
  <project name="git/meta-intel" remote="yocto" revision="mickledore" path="meta-intel" />
 
  <!-- Xilinx Petalinux equivalency layers...  Not the full monte, but enough to DO real FPGA work on an eval kit...  -->
- <project name="Xilinx/meta-xilinx-tools" remote="github" revision="rel-v2022.2" path="meta-xilinx-tools" />
- <project name="Xilinx/meta-xilinx" remote="github" revision="rel-v2022.2" path="meta-xilinx" />
- <project name="Xilinx/meta-petalinux" remote="github" revision="rel-v2022.2" path="meta-petalinux" />
+ <project name="Xilinx/meta-xilinx-tools" remote="github" revision="rel-v2023.2" path="meta-xilinx-tools" />
+ <project name="Xilinx/meta-xilinx" remote="github" revision="rel-v2023.2" path="meta-xilinx" />
+ <project name="Xilinx/meta-petalinux" remote="github" revision="rel-v2023.2" path="meta-petalinux" />
 
  <!-- Bring in our Machine/Deep learning BSP and support libraries/apps layer -->
  <project name="madscientist42/meta-edgeml" remote="github" path="meta-edgeml" />
