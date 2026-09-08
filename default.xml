@@ -9,7 +9,7 @@
 	   fetch="https://git.yoctoproject.org" />
 
   <remote  name="openembedded"
-     	   fetch="git://git.openembedded.org/" />
+     	   fetch="https://git.openembedded.org/" />
 
   <!-- Unless overridden by the project line-item, we're grabbing from
        the head of the master branch for any given git repo for this
@@ -19,7 +19,7 @@
  <!-- Yocto/Poky core pieces, including .NET support -->
  <project name="git/poky" remote="yocto" revision="scarthgap" path="." />
  <project name="meta-openembedded" remote="openembedded" revision="scarthgap" path="meta-openembedded" />
- <project name="meta-mono" remote="yocto" revision="master" path="meta-mono" />
+ <project name="meta-mono" remote="yocto" revision="scarthgap" path="meta-mono" />
 
  <!-- The runit metadata layer -->
  <project name="madscientist42/meta-runit" remote="github" path="meta-runit" />
@@ -34,10 +34,10 @@
  <project name="git/meta-raspberrypi" remote="yocto" revision="scarthgap" path="meta-raspberrypi" />
 
  <!-- The RISC-V BSP layer, supporting three mainline SoCs that support Linux. -->
- <project name="riscv/meta-riscv" remote="github" revision="master" path="meta-riscv" />
+ <project name="riscv/meta-riscv" remote="github" revision="scarthgap" path="meta-riscv" />
 
  <!-- The meta-meson layer to bring in the baseline Amlogic SoC support for Libre Computing, ODroid, etc. support -->
- <project name="superna9999/meta-meson" remote="github" revision="master" path="meta-meson" />
+ <project name="superna9999/meta-meson" remote="github" revision="scarthgap" path="meta-meson" />
 
  <!-- meta-tegra layer to bring in NVidia hw support -->
  <project name="OE4T/meta-tegra" remote="github" revision="scarthgap" path="meta-tegra" />
@@ -65,6 +65,9 @@
 
  <!-- Bring in meta-linux-telephony for making fixed and mobile telephony systems -->
  <project name="madscientist42/meta-linux-telephony" remote="github" path="meta-linux-telephony" />
+
+ <!-- Bring in meta-xlibre for MODERN X11 support -->
+ <project name="madscientist42/meta-xlibre" remote="github" path="meta-xlibre" />
 
  <!-- Pull in an OE metadata layer from PHA Technologies... -->
  <project name="madscientist42/meta-pha" remote="github" path="meta-pha"/>
